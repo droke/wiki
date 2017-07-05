@@ -1,0 +1,18 @@
+<?php
+	if(session_id() == '') {
+		session_start();
+	}	
+	
+	function spaceTo_($str)
+	{
+		$str = str_replace("%20", '_', $str);	
+		$str = str_replace(' ', '_', $str);	
+		return $str;
+	}
+	
+	function underscoreToSpace($str)
+	{
+		$str = str_replace('_', ' ', $str);	
+		return $str;
+	}
+?>

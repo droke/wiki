@@ -1,0 +1,10 @@
+<div class="gap15px">
+</div>
+<div class="footer">
+	<div class="page">
+		Wiki system by Luke St Jack<br> 
+		Copyright LSJ @ <a href='http://www.lukestjack.com'>lukestjack.com</a>
+	</div>
+</div>
+<div class="gap15px">
+</div>

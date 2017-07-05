@@ -1,0 +1,40 @@
+Click the edit button to see how this page works!
+
+<h1>Header1</h1>
+<h2>Header2</h2>
+<h3>Header3</h3>
+<h4>Header4</h4>
+<b>bold</b>
+<li>list item1</li>
+<li>list item2</li>
+<li>list item3</li>
+
+!categories=Example Category!
+!title=Example page full of samples!
+
+You can also redirect=PAGE using the same format as above.
+
+[[Example Link]]
+[[Example Link|Different text, same link!]]
+
+Here have some pictures, they default to right, so just leave it blank if you want, such as:
+
+[img]https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/13906801_10205547841974636_1716947623778967296_n.jpg?oh=dab5582c90c1fc2db13983161a67382b&oe=5A10D43A[/img]
+
+Or make it positioned to the right with this tag:
+
+[img]https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/14324277_10205798358437391_5705190337134156900_o.jpg?oh=85afe7a4d50d85fd4de5c5ba08ebf135&oe=59CF8C99|right[/img]
+
+Or centre the image, and have it larger.
+
+[img]https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/14249992_10205758730406715_5837785053353142386_o.jpg?oh=ebe4d67c7945fe089d8b629281d3f4eb&oe=59CE6278|center[/img]
+
+Images can also have descriptions, with this format:
+
+[img]https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/13939494_10205547845094714_5233182371700239859_n.jpg?oh=05cdecbcfd65eedcd36f5519425da205&oe=5A0A4D9D|left|Northern Ireland / Giant's Causeway[/img]
+
+Anything you enter except right, left or center is taken as the description, which are special tags used to justify the images.
+
+[img]https://scontent-syd2-1.xx.fbcdn.net/v/t31.0-8/14138776_10205679809753748_3239138313931556659_o.jpg?oh=3f86bddd7d4ef86b0c2234fa7d25757f&oe=59CF7FBB|everything|but|the|last|tag|is|ignored[/img]
+
+Look at the source of this page for it to make any sense.

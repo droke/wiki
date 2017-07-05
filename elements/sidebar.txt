@@ -1,0 +1,58 @@
+<div class="sidebar">
+	<div class='gap15px'></div>	
+	<div class="sidebar_image">
+		<img src="img/logo.png" alt="logo" height="40px" width="200px"=>
+	</div>	
+	<div class='gap15px'></div>	
+	
+	<div class="sidebar_content">
+		<a href='index.php?p=Home'><div class='sidebar_button'>Home</div></a>	
+		<a href='index.php?p=Samples'><div class='sidebar_button'>Samples</div></a>
+		<a href='random.php'><div class='sidebar_button'>Random</div></a>
+
+		
+		<?php
+			if (!empty($_SESSION['u']) and !empty($_SESSION['verified']) and $_SESSION['verified'] == 1)
+			{
+				echo "<div class='gap5px'></div>";				
+				
+				if ($_SESSION['isadmin'] == 1)
+				{			
+					echo "<a href='administration.php'><div class='sidebar_button'>Administration</div></a>";					
+				}
+				echo "<a href='index.php?p=User-" . $_SESSION['u'] . "'><div class='sidebar_button'>Profile</div></a>";
+			}
+		?>
+	</div>	
+	
+</div>
+
+<div class='login'>	
+	<?php			
+		if (!empty($_SESSION['u']) and !empty($_SESSION['verified']) and $_SESSION['verified'] == 1)
+		{
+			echo "Logged in as " . $_SESSION['u'];				
+			echo "<a href='login.php?logout=1&p=" . $title . "'><div class='sidebar_button'>Logout</div></a>";			
+		}
+		else
+		{	
+			if ($_SESSION['ERROR'] and !empty($_SESSION['ERROR'])) 
+			{
+				echo $_SESSION['ERROR'];
+				$_SESSION['ERROR'] = "";
+			}
+		
+			echo "<form action='login.php'>";
+			echo "<input type='text' name='un' size='15' />";
+			echo "<input type='password' name='pw' size='15' />";
+			echo "<div align='center'>";	
+
+			//echo "<a href='login.php?un=" . $_POST['un'] . " &pw=" . $_POST['pw'] . " &p=" . $title . "'><div class='sidebar_button'>Login</div></a>";
+			echo "<button type='submit' name='p' value='" . $title . "' class='sidebar_button'>Login</button>";
+			
+			
+			echo "</div>";
+			echo "</form>";		
+		}
+	?>	
+</div>
